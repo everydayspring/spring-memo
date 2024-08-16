@@ -4,10 +4,11 @@ import com.sparta.springmemo.dto.MemoRequestDto;
 import com.sparta.springmemo.dto.MemoResponseDto;
 import com.sparta.springmemo.entity.Memo;
 import com.sparta.springmemo.repository.MemoRepository;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component
 public class MemoService {
 
     private final MemoRepository memoRepository;
